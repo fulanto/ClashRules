@@ -1,4 +1,7 @@
 payload:
+  - IP-ASN,132203
+  - PROCESS-NAME,com.tencent.mm
+
   - DOMAIN-SUFFIX,tracker.m-team.cc
   - DOMAIN-SUFFIX,kp.m-team.cc
   - DOMAIN-SUFFIX,hdchina.org
@@ -16,3 +19,13 @@ payload:
   - DOMAIN-SUFFIX,totheglory.im
   - DOMAIN-SUFFIX,azurewebsites.net
   - DOMAIN-SUFFIX,chdbits.co
+  - DOMAIN-SUFFIX,dewrain.life
+  - DOMAIN-SUFFIX,daydream.day
+  - DOMAIN-SUFFIX,171vr.cn
+
+    # capitalone
+  - DOMAIN-SUFFIX,capitalone.com
+  - DOMAIN-SUFFIX,capitaloneshopping.com
+  - DOMAIN,capitalone-resources.digital-cloud.medallia.com
+  - DOMAIN,capitalone.md-apis.medallia.com
+  - DOMAIN,capitalone-udc.digital-cloud.medallia.com

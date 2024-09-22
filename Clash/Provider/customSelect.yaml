@@ -1,0 +1,10 @@
+payload:
+  - DOMAIN-SUFFIX,walmart.com
+  - DOMAIN-SUFFIX,walmartimages.com
+  - DOMAIN-SUFFIX,amazon.com
+  - DOMAIN-SUFFIX,amazon.dev
+  - DOMAIN-SUFFIX,ssl-images-amazon.com
+  - DOMAIN-SUFFIX,siege-amazon.com
+  - DOMAIN-SUFFIX,americanexpress.com
+  - DOMAIN-SUFFIX,aexp-static.com
+  - DOMAIN-SUFFIX,sentry.io
