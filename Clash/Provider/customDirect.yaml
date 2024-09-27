@@ -27,6 +27,9 @@ payload:
   - DOMAIN-SUFFIX,daydream.day
   - DOMAIN-SUFFIX,171vr.cn
 
+  # sonos
+  - DOMAIN-SUFFIX,+.sonos.com
+
     # capitalone
   - DOMAIN-SUFFIX,capitalone.com
   - DOMAIN-SUFFIX,capitaloneshopping.com
