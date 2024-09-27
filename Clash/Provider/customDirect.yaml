@@ -28,7 +28,7 @@ payload:
   - DOMAIN-SUFFIX,171vr.cn
 
   # sonos
-  - DOMAIN-SUFFIX,+.sonos.com
+  - DOMAIN-SUFFIX,sonos.com
 
     # capitalone
   - DOMAIN-SUFFIX,capitalone.com
