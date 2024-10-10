@@ -63,3 +63,8 @@ payload:
   # Reddit
   - DOMAIN-SUFFIX,reddit.com
   - DOMAIN-SUFFIX,redditstatic.com
+
+  # One Finance
+  - DOMAIN-SUFFIX,one.app
+  - DOMAIN-SUFFIX,braze.com
+  - DOMAIN-SUFFIX,browser-intake-datadoghq.com
