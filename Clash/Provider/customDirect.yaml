@@ -26,6 +26,9 @@ payload:
   - DOMAIN-SUFFIX,dewrain.life
   - DOMAIN-SUFFIX,daydream.day
   - DOMAIN-SUFFIX,171vr.cn
+  - DOMAIN-SUFFIX,pddpic.com
+  - DOMAIN-SUFFIX,zsxq.com
+  - DOMAIN-SUFFIX,300hu.com
 
   # sonos
   - DOMAIN-SUFFIX,sonos.com
