@@ -78,3 +78,9 @@ payload:
   - DOMAIN-SUFFIX,firstdata.com
   - DOMAIN-SUFFIX,hsbc.com
   - DOMAIN-SUFFIX,tiqcdn.com
+  - DOMAIN-SUFFIX,liveperson.net
+  - DOMAIN-SUFFIX,lpsnmedia.net
+  - DOMAIN-SUFFIX,vv1865.com,
+  - DOMAIN-SUFFIX,online-metrix.net
+  - DOMAIN-SUFFIX,tealiumiq.com
+  - DOMAIN-SUFFIX,hsbc.com.mx
