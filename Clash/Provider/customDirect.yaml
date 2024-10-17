@@ -118,4 +118,6 @@ payload:
   - DOMAIN-KEYWORD,announce
   - DOMAIN-KEYWORD,torrent
   - DOMAIN-SUFFIX,smtp
+  - DOMAIN-SUFFIX,jddebug.com
+  - DOMAIN-SUFFIX,jpush.cn
   # - URL-REGEX,(Subject|HELO|SMTP)

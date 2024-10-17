@@ -73,3 +73,8 @@ payload:
   - DOMAIN-SUFFIX,one.app
   - DOMAIN-SUFFIX,braze.com
   - DOMAIN-SUFFIX,browser-intake-datadoghq.com
+
+  # HSBC
+  - DOMAIN-SUFFIX,firstdata.com
+  - DOMAIN-SUFFIX,hsbc.com
+  - DOMAIN-SUFFIX,tiqcdn.com
