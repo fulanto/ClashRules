@@ -8,6 +8,11 @@ payload:
   - DOMAIN-SUFFIX,chasecdn.com
   - DOMAIN-SUFFIX,zimperium.com
 
+  # Amex
+  - DOMAIN-SUFFIX,americanexpress.com
+  - DOMAIN-SUFFIX,aexp-static.com
+  - DOMAIN-SUFFIX,sentry.io
+
   # Sofi
   - DOMAIN-SUFFIX,sofi.com
   - DOMAIN-SUFFIX,dvnfo.com
