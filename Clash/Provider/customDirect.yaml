@@ -24,7 +24,7 @@ payload:
   - DOMAIN-SUFFIX,ptchdbits.co
   - DOMAIN-SUFFIX,chdbits.xyz
   - DOMAIN-SUFFIX,dewrain.life
-  - DOMAIN-SUFFIX,daydream.day
+  # - DOMAIN-SUFFIX,daydream.day
   - DOMAIN-SUFFIX,171vr.cn
   - DOMAIN-SUFFIX,pddpic.com
   - DOMAIN-SUFFIX,zsxq.com
