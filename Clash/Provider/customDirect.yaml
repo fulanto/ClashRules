@@ -116,3 +116,4 @@ payload:
   # - URL-REGEX,(Subject|HELO|SMTP)
 
   - DOMAIN-SUFFIX,3gppnetwork.org
+  - DOMAIN-SUFFIX,crl.t-mobile.com

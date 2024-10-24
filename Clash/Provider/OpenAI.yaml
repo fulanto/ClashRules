@@ -17,10 +17,6 @@ payload:
 
   - DOMAIN-SUFFIX,o33249.ingest.sentry.io
 
-  # > Claude
-  - DOMAIN-SUFFIX,anthropic.com
-  - DOMAIN-SUFFIX,claude.ai
-
   # > Copilot
   - DOMAIN-SUFFIX,copilot.microsoft.com
 
