@@ -114,3 +114,5 @@ payload:
   - DOMAIN-SUFFIX,jddebug.com
   - DOMAIN-SUFFIX,jpush.cn
   # - URL-REGEX,(Subject|HELO|SMTP)
+
+  - DOMAIN-SUFFIX,3gppnetwork.org
