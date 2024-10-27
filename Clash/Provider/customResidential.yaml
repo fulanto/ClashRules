@@ -95,3 +95,6 @@ payload:
   - DOMAIN,capitalone-udc.digital-cloud.medallia.com
   - DOMAIN-SUFFIX,cooldata.com
   - DOMAIN-SUFFIX,kvaedit.site
+
+  # ipinfo
+  - DOMAIN-SUFFIX,ipinfo.io
