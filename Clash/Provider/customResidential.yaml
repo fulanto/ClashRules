@@ -8,11 +8,6 @@ payload:
   - DOMAIN-SUFFIX,chasecdn.com
   - DOMAIN-SUFFIX,zimperium.com
 
-  # Amex
-  - DOMAIN-SUFFIX,americanexpress.com
-  - DOMAIN-SUFFIX,aexp-static.com
-  - DOMAIN-SUFFIX,sentry.io
-
   # Sofi
   - DOMAIN-SUFFIX,sofi.com
   - DOMAIN-SUFFIX,dvnfo.com
@@ -86,15 +81,6 @@ payload:
   - DOMAIN-SUFFIX,hsbc.com.mx
   - DOMAIN-SUFFIX,qualtrics.com
   - DOMAIN-SUFFIX,eum-appdynamics.com
-
-    # capitalone
-  - DOMAIN-SUFFIX,capitalone.com
-  - DOMAIN-SUFFIX,capitaloneshopping.com
-  - DOMAIN,capitalone-resources.digital-cloud.medallia.com
-  - DOMAIN,capitalone.md-apis.medallia.com
-  - DOMAIN,capitalone-udc.digital-cloud.medallia.com
-  - DOMAIN-SUFFIX,cooldata.com
-  - DOMAIN-SUFFIX,kvaedit.site
 
   # ipinfo
   - DOMAIN-SUFFIX,ipinfo.io

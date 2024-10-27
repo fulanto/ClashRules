@@ -8,3 +8,8 @@ payload:
   # > Claude
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
+
+  # Amex
+  - DOMAIN-SUFFIX,americanexpress.com
+  - DOMAIN-SUFFIX,aexp-static.com
+  - DOMAIN-SUFFIX,sentry.io
