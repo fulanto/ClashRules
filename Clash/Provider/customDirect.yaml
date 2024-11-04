@@ -127,3 +127,6 @@ payload:
   - DOMAIN,capitalone-udc.digital-cloud.medallia.com
   - DOMAIN-SUFFIX,cooldata.com
   - DOMAIN-SUFFIX,kvaedit.site
+  
+  # Fastmail.com
+  - DOMAIN-SUFFIX,fastmail.com
