@@ -130,3 +130,4 @@ payload:
   
   # Fastmail.com
   - DOMAIN-SUFFIX,fastmail.com
+  - DOMAIN-SUFFIX,fastmailusercontent.com
