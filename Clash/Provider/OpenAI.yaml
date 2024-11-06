@@ -29,3 +29,11 @@ payload:
 
   # > Perplexity AI
   - DOMAIN-SUFFIX,perplexity.ai
+  
+  # > Claude
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+
+  # cursor
+  - DOMAIN-SUFFIX,cursor.sh
+  - DOMAIN-SUFFIX,sourcegraph.com

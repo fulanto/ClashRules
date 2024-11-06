@@ -5,9 +5,6 @@ payload:
   - DOMAIN-SUFFIX,amazon.dev
   - DOMAIN-SUFFIX,ssl-images-amazon.com
   - DOMAIN-SUFFIX,siege-amazon.com
-  # > Claude
-  - DOMAIN-SUFFIX,anthropic.com
-  - DOMAIN-SUFFIX,claude.ai
 
   # Amex
   - DOMAIN-SUFFIX,americanexpress.com
