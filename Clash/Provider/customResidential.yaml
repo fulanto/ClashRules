@@ -72,3 +72,7 @@ payload:
   # ipinfo
   - DOMAIN-SUFFIX,ipinfo.io
 
+  # Amex
+  - DOMAIN-SUFFIX,americanexpress.com
+  - DOMAIN-SUFFIX,aexp-static.com
+  - DOMAIN-SUFFIX,sentry.io

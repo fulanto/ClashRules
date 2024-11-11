@@ -6,7 +6,3 @@ payload:
   - DOMAIN-SUFFIX,ssl-images-amazon.com
   - DOMAIN-SUFFIX,siege-amazon.com
 
-  # Amex
-  - DOMAIN-SUFFIX,americanexpress.com
-  - DOMAIN-SUFFIX,aexp-static.com
-  - DOMAIN-SUFFIX,sentry.io
