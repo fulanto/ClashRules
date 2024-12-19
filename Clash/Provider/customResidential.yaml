@@ -77,3 +77,11 @@ payload:
   - DOMAIN-SUFFIX,aexp-static.com
   - DOMAIN-SUFFIX,sentry.io
 
+  # capitalone
+  - DOMAIN-SUFFIX,capitalone.com
+  - DOMAIN-SUFFIX,capitaloneshopping.com
+  - DOMAIN,capitalone-resources.digital-cloud.medallia.com
+  - DOMAIN,capitalone.md-apis.medallia.com
+  - DOMAIN,capitalone-udc.digital-cloud.medallia.com
+  - DOMAIN-SUFFIX,cooldata.com
+  - DOMAIN-SUFFIX,kvaedit.site
