@@ -121,8 +121,8 @@ payload:
 
   
   # Fastmail.com
-  - DOMAIN-SUFFIX,fastmail.com
-  - DOMAIN-SUFFIX,fastmailusercontent.com
+  #- DOMAIN-SUFFIX,fastmail.com
+  #- DOMAIN-SUFFIX,fastmailusercontent.com
 
   # capitalone
   - DOMAIN-SUFFIX,capitalone.com
