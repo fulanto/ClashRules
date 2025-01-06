@@ -135,3 +135,6 @@ payload:
 
   # 公司网络直连
   - DOMAIN-SUFFIX,aiqzt.com
+
+  # Plex
+  - DOMAIN-SUFFIX,plex.tv
