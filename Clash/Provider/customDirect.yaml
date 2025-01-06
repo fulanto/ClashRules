@@ -137,6 +137,4 @@ payload:
   - DOMAIN-SUFFIX,aiqzt.com
 
   # Plex
-  - DOMAIN-SUFFIX,plex.tv
-  - DOMAIN-SUFFIX,+.plex.direct
-  - DOMAIN-SUFFIX,*.plex.direct
+  - DOMAIN-KEYWORD,plex
