@@ -1,4 +1,4 @@
-payload:
+uayload:
   - IP-ASN,132203
   - PROCESS-NAME,com.tencent.mm
 
@@ -109,7 +109,7 @@ payload:
   - DOMAIN-SUFFIX,audiences.me
 
   - DOMAIN-KEYWORD,announce
-  - DOMAIN-KEYWORD,torrent
+  #- DOMAIN-KEYWORD,torrent
   - DOMAIN-SUFFIX,smtp
   - DOMAIN-SUFFIX,jddebug.com
   - DOMAIN-SUFFIX,jpush.cn
