@@ -109,7 +109,7 @@ uayload:
   - DOMAIN-SUFFIX,audiences.me
 
   - DOMAIN-KEYWORD,announce
-  #- DOMAIN-KEYWORD,torrent
+  # - DOMAIN-KEYWORD,torrent
   - DOMAIN-SUFFIX,smtp
   - DOMAIN-SUFFIX,jddebug.com
   - DOMAIN-SUFFIX,jpush.cn
