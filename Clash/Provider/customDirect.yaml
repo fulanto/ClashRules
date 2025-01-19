@@ -139,3 +139,8 @@ payload:
 
   # Plex
   - DOMAIN-SUFFIX,plex.tv
+
+  # Hilton
+  - DOMAIN-SUFFIX,hilton.com
+  - DOMAIN-SUFFIX,hilton.com.cn
+  - DOMAIN-SUFFIX,hiltonapi.com
