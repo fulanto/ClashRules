@@ -144,3 +144,5 @@ payload:
   - DOMAIN-SUFFIX,hilton.com
   - DOMAIN-SUFFIX,hilton.com.cn
   - DOMAIN-SUFFIX,hiltonapi.com
+  - DOMAIN-SUFFIX,hilton.io
+  - DOMAIN-SUFFIX,emb-api.com
