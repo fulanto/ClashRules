@@ -79,3 +79,6 @@ payload:
 
   # USBank
   - DOMAIN-SUFFIX,usbank.com
+
+  # points.com
+  - DOMAIN-SUFFIX,points.com
