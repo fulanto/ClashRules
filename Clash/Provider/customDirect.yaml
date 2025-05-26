@@ -140,3 +140,6 @@ payload:
   # Plex
   - DOMAIN-SUFFIX,plex.tv
 
+  # 闲鱼gemini key api
+  - api.skyi.cc
+
