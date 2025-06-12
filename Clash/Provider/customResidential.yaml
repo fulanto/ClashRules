@@ -83,6 +83,3 @@ payload:
   # points.com
   - DOMAIN-SUFFIX,points.com
 
-  # cursor
-  - DOMAIN-SUFFIX,cursor.sh
-  - DOMAIN-SUFFIX,cursor.com
