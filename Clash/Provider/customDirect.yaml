@@ -136,10 +136,8 @@ payload:
 
   # 公司网络直连
   - DOMAIN-SUFFIX,aiqzt.com
+  - DOMAIN-SUFFIX,trizenai.com
+  - DOMAIN-SUFFIX,trizen.ai
 
   # Plex
   - DOMAIN-SUFFIX,plex.tv
-
-  # 闲鱼gemini key api
-  - DOMAIN,api.skyi.cc
-
