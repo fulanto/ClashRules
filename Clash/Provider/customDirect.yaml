@@ -141,3 +141,6 @@ payload:
 
   # Plex
   - DOMAIN-SUFFIX,plex.tv
+
+  # mnapi
+  - DOMAIN-SUFFIX,mnapi.com
