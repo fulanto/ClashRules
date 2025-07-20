@@ -13,3 +13,7 @@ payload:
   # cursor
   - DOMAIN-SUFFIX,cursor.sh
   - DOMAIN-SUFFIX,cursor.com
+
+  # Firstrade
+  - DOMAIN-SUFFIX,firstrade.com
+  - DOMAIN-SUFFIX,benzinga.com

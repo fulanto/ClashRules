@@ -1,7 +1,4 @@
 payload:
-  # fistrade
-  - DOMAIN-SUFFIX,firstrade.com
-  - DOMAIN-SUFFIX,benzinga.com
   
   # chase
   - DOMAIN-SUFFIX,chase.com
