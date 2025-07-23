@@ -17,3 +17,6 @@ payload:
   # Firstrade
   - DOMAIN-SUFFIX,firstrade.com
   - DOMAIN-SUFFIX,benzinga.com
+
+  # docker
+  - DOMAIN-SUFFIX,docker.com

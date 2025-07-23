@@ -144,3 +144,6 @@ payload:
 
   # mnapi
   - DOMAIN-SUFFIX,mnapi.com
+
+  # Wechat
+  - DOMAIN-SUFFIX,wechat.com
