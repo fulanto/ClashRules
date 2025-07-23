@@ -20,3 +20,6 @@ payload:
 
   # docker
   - DOMAIN-SUFFIX,docker.com
+
+  # dify
+  - DOMAIN-SUFFIX,dify.ai
