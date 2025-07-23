@@ -55,7 +55,6 @@ payload:
   - DOMAIN-SUFFIX,appsflyersdk.com
   - DOMAIN-SUFFIX,varomoney.com
   - DOMAIN-SUFFIX,braze.com
-  - DOMAIN-SUFFIX,segment.io
 
   # Reddit
   - DOMAIN-SUFFIX,reddit.com

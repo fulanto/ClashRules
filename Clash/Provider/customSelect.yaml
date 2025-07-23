@@ -6,6 +6,7 @@ payload:
   - DOMAIN-SUFFIX,amazon.dev
   - DOMAIN-SUFFIX,ssl-images-amazon.com
   - DOMAIN-SUFFIX,siege-amazon.com
+  - DOMAIN-SUFFIX,segment.io
 
   - DOMAIN-SUFFIX,oculus.com
   - DOMAIN-SUFFIX,meta.com
