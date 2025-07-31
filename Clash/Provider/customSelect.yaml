@@ -24,3 +24,6 @@ payload:
 
   # dify
   - DOMAIN-SUFFIX,dify.ai
+
+  # iproyal
+  - DOMAIN-SUFFIX,iproyal.com
