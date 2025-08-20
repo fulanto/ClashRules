@@ -27,3 +27,4 @@ payload:
 
   # iproyal
   - DOMAIN-SUFFIX,iproyal.com
+  - DOMAIN-SUFFIX,cloudflareinsights.com
