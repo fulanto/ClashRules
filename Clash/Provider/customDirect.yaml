@@ -147,3 +147,6 @@ payload:
 
   # Wechat
   - DOMAIN-SUFFIX,wechat.com
+
+  # jetbrains
+  - DOMAIN-SUFFIX,download-cdn.jetbrains.com
