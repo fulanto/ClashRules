@@ -152,3 +152,6 @@ payload:
   # jetbrains
   - DOMAIN-SUFFIX,download-cdn.jetbrains.com
   - DOMAIN-SUFFIX,downloads.marketplace.jetbrains.com
+
+  # Open AI Azure
+  - DOMAIN-SUFFIX,openai.azure.com
