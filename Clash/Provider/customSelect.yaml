@@ -34,3 +34,6 @@ payload:
 
   # codeium
   - DOMAIN-SUFFIX,codeium.com
+
+  # antigravity
+  - DOMAIN-SUFFIX,antigravity-unleash.goog
