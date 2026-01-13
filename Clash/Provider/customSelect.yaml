@@ -31,3 +31,6 @@ payload:
 
   # brew
   - DOMAIN-SUFFIX,brew.sh
+
+  # codeium
+  - DOMAIN-SUFFIX,codeium.com
