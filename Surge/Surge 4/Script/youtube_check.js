@@ -1,17 +1,17 @@
 /**
  *
  * [Panel]
- * youtube_premium_check = script-name=youtube_premium_check, title="YouTube Premium 解锁检测", update-interval=1
+ * youtube_premium_check = script-name=youtube_premium_check,title="YouTube Premium 解锁检测",update-interval=1
  *
  * [Script]
- * youtube_premium_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js?version=1633074636264, argument=title=YouTube 解锁检测
+ * youtube_premium_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js?version=1633074636264,argument=title=YouTube 解锁检测
  *
  * 支持使用脚本使用 argument 参数自定义配置，如：argument=key1=URLEncode(value1)&key2=URLEncode(value2)，具体参数如下所示，
  * title: 面板标题
  * availableContent: 解锁时展示的的文本内容，支持两个区域占位符 #REGION_FLAG# 和 #REGION_CODE#，用来展示解锁区域国旗 emoji 和解锁区域编码
  * availableIcon: 解锁时展示的图标，内容为任意有效的 SF Symbol Name
  * availableIconColor:  解锁时展示的图标颜色，内容为颜色的 HEX 编码
- * availableStyle: 解锁时展示的图标样式，参数可选值有 good, info, alert, error
+ * availableStyle: 解锁时展示的图标样式，参数可选值有 good,info,alert,error
  * notAvailableContent: 不支持解锁时展示的文本内容
  * notAvailableIcon: 不支持解锁时展示的图标
  * notAvailableIconColor: 不支持解锁时展示的图标颜色
@@ -46,7 +46,7 @@ let panel = {
 }
 
 ;(async () => {
-  await Promise.race([test(), timeout()])
+  await Promise.race([test(),timeout()])
     .then(region => {
       if (options.availableIcon) {
         panel['icon'] = options.availableIcon
@@ -54,7 +54,7 @@ let panel = {
       } else {
         panel['style'] = options.availableStyle
       }
-      panel['content'] = replaceRegionPlaceholder(options.availableContent, region)
+      panel['content'] = replaceRegionPlaceholder(options.availableContent,region)
     })
     .catch(error => {
       if (error !== 'Not Available') {
@@ -85,15 +85,15 @@ let panel = {
   })
 
 function test() {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve,reject) => {
     let option = {
       url: BASE_URL,
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/94.0.4606.61 Safari/537.36',
         'Accept-Language': 'en',
       },
     }
-    $httpClient.get(option, function (error, response, data) {
+    $httpClient.get(option,function (error,response,data) {
       if (error != null || response.status !== 200) {
         reject('Error')
         return
@@ -105,7 +105,7 @@ function test() {
       }
 
       let region = ''
-      let re = new RegExp('"countryCode":"(.*?)"', 'gm')
+      let re = new RegExp('"countryCode":"(.*?)"','gm')
       let result = re.exec(data)
       if (result != null && result.length === 2) {
         region = result[1]
@@ -120,10 +120,10 @@ function test() {
 }
 
 function timeout(delay = 5000) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve,reject) => {
     setTimeout(() => {
       reject('Timeout')
-    }, delay)
+    },delay)
   })
 }
 
@@ -139,16 +139,16 @@ function getCountryFlagEmoji(countryCode) {
 }
 
 function getOptions() {
-  let options = Object.assign({}, DEFAULT_OPTIONS)
+  let options = Object.assign({},DEFAULT_OPTIONS)
   if (typeof $argument != 'undefined') {
     try {
       let params = Object.fromEntries(
         $argument
           .split('&')
           .map(item => item.split('='))
-          .map(([k, v]) => [k, decodeURIComponent(v)])
+          .map(([k,v]) => [k,decodeURIComponent(v)])
       )
-      Object.assign(options, params)
+      Object.assign(options,params)
     } catch (error) {
       console.error(`$argument 解析失败，$argument: + ${argument}`)
     }
@@ -157,22 +157,22 @@ function getOptions() {
   return options
 }
 
-function replaceRegionPlaceholder(content, region) {
+function replaceRegionPlaceholder(content,region) {
   let result = content
 
   if (result.indexOf('#REGION_CODE#') !== -1) {
-    result = result.replaceAll('#REGION_CODE#', region.toUpperCase())
+    result = result.replaceAll('#REGION_CODE#',region.toUpperCase())
   }
   if (result.indexOf('#REGION_FLAG#') !== -1) {
-    result = result.replaceAll('#REGION_FLAG#', getCountryFlagEmoji(region.toUpperCase()))
+    result = result.replaceAll('#REGION_FLAG#',getCountryFlagEmoji(region.toUpperCase()))
   }
 
   if (result.indexOf('#REGION_NAME#') !== -1) {
-    result = result.replaceAll('#REGION_NAME#', RESION_NAMES?.[region.toUpperCase()]?.chinese ?? '')
+    result = result.replaceAll('#REGION_NAME#',RESION_NAMES?.[region.toUpperCase()]?.chinese ?? '')
   }
 
   if (result.indexOf('#REGION_NAME_EN#') !== -1) {
-    result = result.replaceAll('#REGION_NAME_EN#', RESION_NAMES?.[region.toUpperCase()]?.english ?? '')
+    result = result.replaceAll('#REGION_NAME_EN#',RESION_NAMES?.[region.toUpperCase()]?.english ?? '')
   }
 
   return result

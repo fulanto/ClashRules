@@ -12,11 +12,11 @@
  * availableContent: 解锁时展示的的文本内容，支持以下四个个区域占位符 #REGION_FLAG#、#REGION_CODE#、#REGION_NAME#、#REGION_NAME_EN#，用来展示地区国旗 emoji 、地区编码、地区中文名称、地区英文名称
  * availableIcon: 解锁时展示的图标，内容为任意有效的 SF Symbol Name
  * availableIconColor:  解锁时展示的图标颜色，内容为颜色的 HEX 编码
- * availableStyle: 解锁时展示的图标样式，参数可选值有 good, info, alert, error
+ * availableStyle: 解锁时展示的图标样式，参数可选值有 good,info,alert,error
  * comingContent: 计划上线展示的的文本内容，支持以下四个个区域占位符 #REGION_FLAG#、#REGION_CODE#、#REGION_NAME#、#REGION_NAME_EN#，用来展示地区国旗 emoji 、地区编码、地区中文名称、地区英文名称
  * comingIcon: 计划上线展示的图标，内容为任意有效的 SF Symbol Name
  * comingIconColor:  计划上线展示的图标颜色，内容为颜色的 HEX 编码
- * comingStyle: 计划上线展示的图标样式，参数可选值有 good, info, alert, error
+ * comingStyle: 计划上线展示的图标样式，参数可选值有 good,info,alert,error
  * notAvailableContent: 不支持解锁时展示的文本内容
  * notAvailableIcon: 不支持解锁时展示的图标
  * notAvailableIconColor: 不支持解锁时展示的图标颜色
@@ -28,7 +28,7 @@
  * timeout: 超时时间，毫秒，默认为 3000
  */
 
-const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'
+const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/94.0.4606.71 Safari/537.36'
 
 // 即将登陆
 const STATUS_COMING = 2
@@ -68,8 +68,8 @@ let panel = {
 }
 
 ;(async () => {
-  let { region, status } = await testDisneyPlus()
-  console.log(`testDisneyPlus: region=${region}, status=${status}`)
+  let { region,status } = await testDisneyPlus()
+  console.log(`testDisneyPlus: region=${region},status=${status}`)
 
   switch (status) {
     case STATUS_AVAILABLE:
@@ -79,7 +79,7 @@ let panel = {
       } else {
         panel['style'] = options.availableStyle
       }
-      panel['content'] = replaceRegionPlaceholder(options.availableContent, region)
+      panel['content'] = replaceRegionPlaceholder(options.availableContent,region)
       return
     case STATUS_COMING:
       if (options.comingIcon) {
@@ -89,7 +89,7 @@ let panel = {
         panel['style'] = options.comingStyle
       }
 
-      panel['content'] = replaceRegionPlaceholder(options.comingContent, region)
+      panel['content'] = replaceRegionPlaceholder(options.comingContent,region)
       return
     case STATUS_NOT_AVAILABLE:
       if (options.notAvailableIcon) {
@@ -115,24 +115,24 @@ let panel = {
 
 async function testDisneyPlus() {
   try {
-    let { region, cnbl } = await Promise.race([testHomePage(), timeout(options.timeout)])
-    console.log(`homepage: region=${region}, cnbl=${cnbl}`)
+    let { region,cnbl } = await Promise.race([testHomePage(),timeout(options.timeout)])
+    console.log(`homepage: region=${region},cnbl=${cnbl}`)
 
-    let { countryCode, inSupportedLocation, accessToken } = await Promise.race([getLocationInfo(), timeout(options.timeout)])
-    console.log(`getLocationInfo: countryCode=${countryCode}, inSupportedLocation=${inSupportedLocation}`)
+    let { countryCode,inSupportedLocation,accessToken } = await Promise.race([getLocationInfo(),timeout(options.timeout)])
+    console.log(`getLocationInfo: countryCode=${countryCode},inSupportedLocation=${inSupportedLocation}`)
 
     region = countryCode ?? region
     // 即将登陆
     if (inSupportedLocation === false || inSupportedLocation === 'false') {
-      return { region, status: STATUS_COMING }
+      return { region,status: STATUS_COMING }
     }
 
-    let support = await Promise.race([testPublicGraphqlAPI(accessToken), timeout(options.timeout)])
+    let support = await Promise.race([testPublicGraphqlAPI(accessToken),timeout(options.timeout)])
     if (!support) {
       return { status: STATUS_NOT_AVAILABLE }
     }
     // 支持解锁
-    return { region, status: STATUS_AVAILABLE }
+    return { region,status: STATUS_AVAILABLE }
   } catch (error) {
     console.log(error)
 
@@ -151,23 +151,23 @@ async function testDisneyPlus() {
 }
 
 function testPublicGraphqlAPI(accessToken) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve,reject) => {
     let opts = {
       url: 'https://disney.api.edge.bamgrid.com/v1/public/graphql',
       headers: {
         'Accept-Language': 'en',
         Authorization: accessToken,
         'Content-Type': 'application/json',
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/94.0.4606.71 Safari/537.36',
       },
       body: JSON.stringify({
         query:
-          'query($preferredLanguages: [String!]!, $version: String) {globalization(version: $version) { uiLanguage(preferredLanguages: $preferredLanguages) }}',
-        variables: { version: '1.5.0', preferredLanguages: ['en'] },
+          'query($preferredLanguages: [String!]!,$version: String) {globalization(version: $version) { uiLanguage(preferredLanguages: $preferredLanguages) }}',
+        variables: { version: '1.5.0',preferredLanguages: ['en'] },
       }),
     }
 
-    $httpClient.post(opts, function (error, response, data) {
+    $httpClient.post(opts,function (error,response,data) {
       if (error) {
         reject('Error')
         return
@@ -178,7 +178,7 @@ function testPublicGraphqlAPI(accessToken) {
 }
 
 function getLocationInfo() {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve,reject) => {
     let opts = {
       url: 'https://disney.api.edge.bamgrid.com/graph/v1/device/graphql',
       headers: {
@@ -209,7 +209,7 @@ function getLocationInfo() {
       }),
     }
 
-    $httpClient.post(opts, function (error, response, data) {
+    $httpClient.post(opts,function (error,response,data) {
       if (error) {
         reject('Error')
         return
@@ -235,13 +235,13 @@ function getLocationInfo() {
           location: { countryCode },
         },
       } = data?.extensions?.sdk
-      resolve({ inSupportedLocation, countryCode, accessToken })
+      resolve({ inSupportedLocation,countryCode,accessToken })
     })
   })
 }
 
 function testHomePage() {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve,reject) => {
     let opts = {
       url: 'https://www.disneyplus.com/',
       headers: {
@@ -250,48 +250,48 @@ function testHomePage() {
       },
     }
 
-    $httpClient.get(opts, function (error, response, data) {
+    $httpClient.get(opts,function (error,response,data) {
       if (error) {
         reject('Error')
         return
       }
-      if (response.status !== 200 || data.indexOf('Sorry, Disney+ is not available in your region.') !== -1) {
+      if (response.status !== 200 || data.indexOf('Sorry,Disney+ is not available in your region.') !== -1) {
         reject('Not Available')
         return
       }
 
       let match = data.match(/Region: ([A-Za-z]{2})[\s\S]*?CNBL: ([12])/)
       if (!match) {
-        resolve({ region: '', cnbl: '' })
+        resolve({ region: '',cnbl: '' })
         return
       }
 
       let region = match[1]
       let cnbl = match[2]
-      resolve({ region, cnbl })
+      resolve({ region,cnbl })
     })
   })
 }
 
 function timeout(delay = 5000) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve,reject) => {
     setTimeout(() => {
       reject('Timeout')
-    }, delay)
+    },delay)
   })
 }
 
 function getOptions() {
-  let options = Object.assign({}, DEFAULT_OPTIONS)
+  let options = Object.assign({},DEFAULT_OPTIONS)
   if (typeof $argument != 'undefined') {
     try {
       let params = Object.fromEntries(
         $argument
           .split('&')
           .map(item => item.split('='))
-          .map(([k, v]) => [k, decodeURIComponent(v)])
+          .map(([k,v]) => [k,decodeURIComponent(v)])
       )
-      Object.assign(options, params)
+      Object.assign(options,params)
     } catch (error) {
       console.error(`$argument 解析失败，$argument: + ${argument}`)
     }
@@ -300,22 +300,22 @@ function getOptions() {
   return options
 }
 
-function replaceRegionPlaceholder(content, region) {
+function replaceRegionPlaceholder(content,region) {
   let result = content
 
   if (result.indexOf('#REGION_CODE#') !== -1) {
-    result = result.replaceAll('#REGION_CODE#', region.toUpperCase())
+    result = result.replaceAll('#REGION_CODE#',region.toUpperCase())
   }
   if (result.indexOf('#REGION_FLAG#') !== -1) {
-    result = result.replaceAll('#REGION_FLAG#', getCountryFlagEmoji(region.toUpperCase()))
+    result = result.replaceAll('#REGION_FLAG#',getCountryFlagEmoji(region.toUpperCase()))
   }
 
   if (result.indexOf('#REGION_NAME#') !== -1) {
-    result = result.replaceAll('#REGION_NAME#', RESION_NAMES?.[region.toUpperCase()]?.chinese ?? '')
+    result = result.replaceAll('#REGION_NAME#',RESION_NAMES?.[region.toUpperCase()]?.chinese ?? '')
   }
 
   if (result.indexOf('#REGION_NAME_EN#') !== -1) {
-    result = result.replaceAll('#REGION_NAME_EN#', RESION_NAMES?.[region.toUpperCase()]?.english ?? '')
+    result = result.replaceAll('#REGION_NAME_EN#',RESION_NAMES?.[region.toUpperCase()]?.english ?? '')
   }
 
   return result

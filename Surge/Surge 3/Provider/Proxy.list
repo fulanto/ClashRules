@@ -8,12 +8,6 @@ DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,battlenet.com
 DOMAIN-SUFFIX,blizzard.com
 
-# > Duolingo
-USER-AGENT,Duolingo*
-DOMAIN-KEYWORD,duolingo
-DOMAIN-SUFFIX,duolingo.cn
-DOMAIN-SUFFIX,duolingo.com
-
 # > Line
 DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,line.me
@@ -41,6 +35,10 @@ DOMAIN-SUFFIX,smartmailcloud.com
 
 # > Tesla
 DOMAIN-KEYWORD,tesla
+
+# > WAQI
+DOMAIN,api.waqi.info
+DOMAIN,aqi.aqicn.org
 
 # > Zooba
 USER-AGENT,battleroyale*
@@ -176,7 +174,6 @@ DOMAIN-SUFFIX,disq.us
 DOMAIN-SUFFIX,disqus.com
 DOMAIN-SUFFIX,disquscdn.com
 DOMAIN-SUFFIX,dler.io
-DOMAIN-SUFFIX,dmm.co.jp
 DOMAIN-SUFFIX,dnsimple.com
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,doub.io
@@ -343,6 +340,7 @@ DOMAIN-SUFFIX,nextmedia.com
 DOMAIN-SUFFIX,nicovideo.jp
 DOMAIN-SUFFIX,nih.gov
 DOMAIN-SUFFIX,nimg.jp
+DOMAIN-SUFFIX,nikke-kr.com
 DOMAIN-SUFFIX,nintendo.com
 DOMAIN-SUFFIX,nintendo.net
 DOMAIN-SUFFIX,notion.so
@@ -617,6 +615,7 @@ DOMAIN-SUFFIX,xuite.net
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,yahoo.com
 DOMAIN-SUFFIX,yahooapis.com
+DOMAIN-SUFFIX,yandex.com
 DOMAIN-SUFFIX,yasni.co.uk
 DOMAIN-SUFFIX,yastatic.net
 DOMAIN-SUFFIX,ycombinator.com
@@ -682,6 +681,7 @@ DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,netmarble.com
 DOMAIN-SUFFIX,nianticlabs.com
 DOMAIN-SUFFIX,pinimg.com
+DOMAIN-SUFFIX,proton.me
 DOMAIN-SUFFIX,pubnub.com
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,t.co

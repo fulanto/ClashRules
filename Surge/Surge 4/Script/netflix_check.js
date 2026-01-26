@@ -1,17 +1,17 @@
 /**
  *
  * [Panel]
- * nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
+ * nf_check = script-name=nf_check,title="Netflix 解锁检测",content="请刷新",update-interval=1
  *
  * [Script]
- * nf_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1633074636264, argument=title=Netflix 解锁检测
+ * nf_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1633074636264,argument=title=Netflix 解锁检测
  *
  * 支持使用脚本使用 argument 参数自定义配置，如：argument=key1=URLEncode(value1)&key2=URLEncode(value2)，具体参数如下所示，
  * title: 面板标题
  * fullContent: 完整解锁时展示的的文本内容，支持以下四个个区域占位符 #REGION_FLAG#、#REGION_CODE#、#REGION_NAME#、#REGION_NAME_EN#，用来展示地区国旗 emoji 、地区编码、地区中文名称、地区英文名称
  * fullIcon: 完整解锁时展示的图标，内容为任意有效的 SF Symbol Name
  * fullIconColor：完整解锁时展示的图标颜色，内容为颜色的 HEX 编码
- * fullStyle: 完整解锁时展示的图标样式，参数可选值有 good, info, alert, error
+ * fullStyle: 完整解锁时展示的图标样式，参数可选值有 good,info,alert,error
  * onlyOriginalContent：仅解锁自制剧时展示的文本内容，支持以下四个个区域占位符 #REGION_FLAG#、#REGION_CODE#、#REGION_NAME#、#REGION_NAME_EN#，用来展示地区国旗 emoji 、地区编码、地区中文名称、地区英文名称
  * onlyOriginalIcon: 仅解锁自制剧时展示的图标
  * onlyOriginalIconColor: 仅解锁自制剧时展示的图标颜色
@@ -55,7 +55,7 @@ let panel = {
 }
 
 ;(async () => {
-  await Promise.race([test(FILM_ID), timeout(10000)])
+  await Promise.race([test(FILM_ID),timeout(10000)])
     .then(async region => {
       if (options.fullIcon) {
         panel['icon'] = options.fullIcon
@@ -68,7 +68,7 @@ let panel = {
         content.replaceAll('#REGION_FLAG#')
       }
 
-      panel['content'] = replaceRegionPlaceholder(options.fullContent, region)
+      panel['content'] = replaceRegionPlaceholder(options.fullContent,region)
     })
     .catch(async error => {
       if (error !== 'Not Found') {
@@ -92,8 +92,8 @@ let panel = {
         return
       }
 
-      let region = await Promise.race([test(AREA_TEST_FILM_ID), timeout(10000)])
-      panel['content'] = replaceRegionPlaceholder(options.onlyOriginalContent, region)
+      let region = await Promise.race([test(AREA_TEST_FILM_ID),timeout(10000)])
+      panel['content'] = replaceRegionPlaceholder(options.onlyOriginalContent,region)
     })
     .catch(error => {
       if (error !== 'Not Available') {
@@ -124,14 +124,14 @@ let panel = {
   })
 
 function test(filmId) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve,reject) => {
     let option = {
       url: BASE_URL + filmId,
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/94.0.4606.61 Safari/537.36',
       },
     }
-    $httpClient.get(option, function (error, response, data) {
+    $httpClient.get(option,function (error,response,data) {
       if (error != null) {
         reject(error)
         return
@@ -164,10 +164,10 @@ function test(filmId) {
 }
 
 function timeout(delay = 5000) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve,reject) => {
     setTimeout(() => {
       reject('Timeout')
-    }, delay)
+    },delay)
   })
 }
 
@@ -183,16 +183,16 @@ function getCountryFlagEmoji(countryCode) {
 }
 
 function getOptions() {
-  let options = Object.assign({}, DEFAULT_OPTIONS)
+  let options = Object.assign({},DEFAULT_OPTIONS)
   if (typeof $argument != 'undefined') {
     try {
       let params = Object.fromEntries(
         $argument
           .split('&')
           .map(item => item.split('='))
-          .map(([k, v]) => [k, decodeURIComponent(v)])
+          .map(([k,v]) => [k,decodeURIComponent(v)])
       )
-      Object.assign(options, params)
+      Object.assign(options,params)
     } catch (error) {
       console.error(`$argument 解析失败，$argument: + ${argument}`)
     }
@@ -201,22 +201,22 @@ function getOptions() {
   return options
 }
 
-function replaceRegionPlaceholder(content, region) {
+function replaceRegionPlaceholder(content,region) {
   let result = content
 
   if (result.indexOf('#REGION_CODE#') !== -1) {
-    result = result.replaceAll('#REGION_CODE#', region.toUpperCase())
+    result = result.replaceAll('#REGION_CODE#',region.toUpperCase())
   }
   if (result.indexOf('#REGION_FLAG#') !== -1) {
-    result = result.replaceAll('#REGION_FLAG#', getCountryFlagEmoji(region.toUpperCase()))
+    result = result.replaceAll('#REGION_FLAG#',getCountryFlagEmoji(region.toUpperCase()))
   }
 
   if (result.indexOf('#REGION_NAME#') !== -1) {
-    result = result.replaceAll('#REGION_NAME#', REGION_NAMES?.[region.toUpperCase()]?.chinese ?? '')
+    result = result.replaceAll('#REGION_NAME#',REGION_NAMES?.[region.toUpperCase()]?.chinese ?? '')
   }
 
   if (result.indexOf('#REGION_NAME_EN#') !== -1) {
-    result = result.replaceAll('#REGION_NAME_EN#', REGION_NAMES?.[region.toUpperCase()]?.english ?? '')
+    result = result.replaceAll('#REGION_NAME_EN#',REGION_NAMES?.[region.toUpperCase()]?.english ?? '')
   }
 
   return result

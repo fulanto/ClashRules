@@ -14,11 +14,11 @@ let tf=["T1","XX","AL","DZ","AD","AO","AG","AR","AM","AU","AT","AZ","BS","BD","B
 let tff=["plus","on"];
 
 // 处理 argument 参数
-let titlediy, icon, iconerr, iconColor, iconerrColor;
+let titlediy,icon,iconerr,iconColor,iconerrColor;
 if (typeof $argument !== 'undefined') {
   const args = $argument.split('&');
   for (let i = 0; i < args.length; i++) {
-  const [key, value] = args[i].split('=');
+  const [key,value] = args[i].split('=');
   if (key === 'title') {
     titlediy = value;
   } else if (key === 'icon') {
@@ -34,7 +34,7 @@ if (typeof $argument !== 'undefined') {
 }
 
 // 发送 HTTP 请求获取所在地信息
-$httpClient.get(url, function(error, response, data){
+$httpClient.get(url,function(error,response,data){
   if (error) {
   console.error(error);
   $done();
@@ -42,18 +42,18 @@ $httpClient.get(url, function(error, response, data){
   }
 
   let lines = data.split("\n");
-  let cf = lines.reduce((acc, line) => {
-  let [key, value] = line.split("=");
+  let cf = lines.reduce((acc,line) => {
+  let [key,value] = line.split("=");
   acc[key] = value;
   return acc;
-  }, {});
+  },{});
   let ip = cf.ip;
   let warp = cf.warp;
   let loc = getCountryFlagEmoji(cf.loc) + ' ' + cf.loc;
 
   // 判断 ChatGPT 是否支持该国家/地区
   let l = tf.indexOf(cf.loc);
-  let gpt, iconUsed;
+  let gpt,iconUsed;
   if (l !== -1) {
   gpt = "支持";
   iconUsed = icon ? icon : undefined;
