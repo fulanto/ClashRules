@@ -38,6 +38,13 @@ payload:
   - DOMAIN-SUFFIX,zkscan.io
   - DOMAIN-SUFFIX,zksync.io
   - DOMAIN-SUFFIX,boba.network
+  - DOMAIN-SUFFIX,monitor-frontend-collector.a.bybit-aws.com
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,bybit.biz
+  - DOMAIN-SUFFIX,bybdc6.com
+  - DOMAIN-SUFFIX,byabcde.com
+  - DOMAIN-SUFFIX,byapps.net
+  - DOMAIN-SUFFIX,byd3c3.com
 
   # > Binance
   - DOMAIN-SUFFIX,binance.cc
