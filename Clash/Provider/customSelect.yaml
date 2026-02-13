@@ -37,3 +37,6 @@ payload:
 
   # antigravity
   - DOMAIN-SUFFIX,antigravity-unleash.goog
+
+  # moomoo
+  - DOMAIN-SUFFIX,moomoo.com
