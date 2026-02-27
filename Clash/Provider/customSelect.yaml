@@ -40,3 +40,5 @@ payload:
 
   # moomoo
   - DOMAIN-SUFFIX,moomoo.com
+  
+  - DOMAIN-SUFFIX,gaccodeapi.com

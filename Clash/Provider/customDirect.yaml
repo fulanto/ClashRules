@@ -155,5 +155,3 @@ payload:
 
   # Open AI Azure
   - DOMAIN-SUFFIX,openai.azure.com
-
-  - DOMAIN-SUFFIX,gaccodeapi.com
