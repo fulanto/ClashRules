@@ -78,4 +78,6 @@ payload:
 
   # points.com
   - DOMAIN-SUFFIX,points.com
+  # lovable ai assistant
+  - DOMAIN-SUFFIX,leaves.mintlify.com
 
