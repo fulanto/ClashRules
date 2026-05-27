@@ -42,3 +42,6 @@ payload:
   - DOMAIN-SUFFIX,moomoo.com
   
   - DOMAIN-SUFFIX,gaccodeapi.com
+
+  - DOMAIN-SUFFIX,lovable.dev
+  - DOMAIN-SUFFIX,leaves.mintlify.com
