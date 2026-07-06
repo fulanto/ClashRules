@@ -159,3 +159,33 @@ payload:
   # CoDreamer
   - DOMAIN-SUFFIX,codreamer.com
   - DOMAIN-SUFFIX,gaccodeapi.com
+
+  # Akile
+  - IP-CIDR,185.81.28.185/32,DIRECT
+  # SG1
+  - IP-CIDR,138.2.109.147/32,DIRECT
+  # 阿什布1号
+  - IP-CIDR,129.213.17.26/32,DIRECT
+  # 阿布扎比
+  - IP-CIDR,129.151.157.154/32,DIRECT
+  # 首尔一号
+  - IP-CIDR,146.56.47.29/32,DIRECT
+  # SG2
+  - IP-CIDR,213.35.99.103/32,DIRECT
+  # 阿什布3号
+  - IP-CIDR,129.213.128.51/32,DIRECT
+  # 圣荷塞4号
+  - IP-CIDR,147.224.54.11/32,DIRECT
+  # 首尔2号（Nginxg_portainer)
+  - IP-CIDR,146.56.142.6/32,DIRECT
+  # 圣荷塞3号
+  - IP-CIDR,167.234.212.222/32,DIRECT
+  # 圣荷塞2号
+  - IP-CIDR,163.192.17.186/32,DIRECT
+  # 圣荷塞1号
+  - IP-CIDR,163.192.42.0/32,DIRECT
+  # 阿什布4号
+  - IP-CIDR,141.148.66.255/32,DIRECT
+  # 阿什布2号
+  - IP-CIDR,150.136.223.235/32,DIRECT
+
