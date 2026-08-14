@@ -41,4 +41,7 @@ payload:
   # moomoo
   - DOMAIN-SUFFIX,moomoo.com
 
+  # notion
+  - DOMAIN-SUFFIX,notion.com
+
   - DOMAIN-SUFFIX,lovable.dev
