@@ -1,7 +1,4 @@
 payload:
-  - IP-ASN,132203
-  - PROCESS-NAME,com.tencent.mm
-
   - DOMAIN-SUFFIX,m-team.cc
   - DOMAIN-SUFFIX,m-team.io
   - DOMAIN-SUFFIX,hdchina.org
@@ -146,9 +143,6 @@ payload:
   # mnapi
   - DOMAIN-SUFFIX,mnapi.com
 
-  # Wechat
-  - DOMAIN-SUFFIX,wechat.com
-
   # jetbrains
   - DOMAIN-SUFFIX,download-cdn.jetbrains.com
   - DOMAIN-SUFFIX,downloads.marketplace.jetbrains.com
@@ -188,4 +182,3 @@ payload:
   - IP-CIDR,141.148.66.255/32,DIRECT
   # 阿什布2号
   - IP-CIDR,150.136.223.235/32,DIRECT
-
