@@ -1,19 +1,6 @@
 payload:
-  # > Client Processes
-  - PROCESS-NAME,com.tencent.mm
-  - PROCESS-NAME,WeChat
-  - PROCESS-NAME,WeChat.exe
-  - PROCESS-NAME,Weixin
-  - PROCESS-NAME,Weixin.exe
-
-  # > WeChat Domains
+  # > International WeChat Domains
   - DOMAIN-SUFFIX,wechat.com
-  - DOMAIN-SUFFIX,weixin.com
-  - DOMAIN-SUFFIX,weixin.qq.com
-  - DOMAIN-SUFFIX,weixin.qq.com.cn
-  - DOMAIN-SUFFIX,servicewechat.com
-  - DOMAIN-SUFFIX,weixinbridge.com
-  - DOMAIN-SUFFIX,wx.qq.com
 
   # > Observed Overseas IPs
   - IP-CIDR,43.160.156.0/24

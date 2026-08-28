@@ -143,6 +143,18 @@ payload:
   # mnapi
   - DOMAIN-SUFFIX,mnapi.com
 
+  # WeChat domestic services and article assets
+  - DOMAIN-SUFFIX,weixin.com
+  - DOMAIN-SUFFIX,weixin.qq.com
+  - DOMAIN-SUFFIX,weixin.qq.com.cn
+  - DOMAIN-SUFFIX,servicewechat.com
+  - DOMAIN-SUFFIX,weixinbridge.com
+  - DOMAIN-SUFFIX,wx.qq.com
+  - DOMAIN-SUFFIX,qpic.cn
+  - DOMAIN-SUFFIX,qlogo.cn
+  - DOMAIN-SUFFIX,wx.gtimg.com
+  - DOMAIN-SUFFIX,lbs.gtimg.com
+
   # jetbrains
   - DOMAIN-SUFFIX,download-cdn.jetbrains.com
   - DOMAIN-SUFFIX,downloads.marketplace.jetbrains.com
