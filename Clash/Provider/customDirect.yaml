@@ -161,6 +161,11 @@ payload:
   # Open AI Azure
   - DOMAIN-SUFFIX,openai.azure.com
 
+  # Supabase
+  - DOMAIN-SUFFIX,supabase.com
+  - DOMAIN-SUFFIX,supabase.co
+  - DOMAIN-SUFFIX,supabase.io
+
   # CoDreamer
   - DOMAIN-SUFFIX,codreamer.com
   - DOMAIN-SUFFIX,gaccodeapi.com
