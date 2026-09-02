@@ -90,12 +90,3 @@ payload:
 
   # lovable ai assistant
   - DOMAIN-SUFFIX,leaves.mintlify.com
-
-  # X / Twitter
-  - DOMAIN-SUFFIX,x.com
-  - DOMAIN-SUFFIX,twitter.com
-  - DOMAIN-SUFFIX,twimg.com
-  - DOMAIN-SUFFIX,twimg.co
-  - DOMAIN-SUFFIX,t.co
-  - DOMAIN-SUFFIX,twttr.com
-
