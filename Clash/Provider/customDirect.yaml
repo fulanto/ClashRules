@@ -112,7 +112,6 @@ payload:
   # - URL-REGEX,(Subject|HELO|SMTP)
 
   - DOMAIN-SUFFIX,3gppnetwork.org
-  - DOMAIN-SUFFIX,crl.t-mobile.com
 
 
   
@@ -141,6 +140,13 @@ payload:
 
   # mnapi
   - DOMAIN-SUFFIX,mnapi.com
+
+  # Tailscale
+  - PROCESS-NAME,IPNExtension
+  - PROCESS-NAME,tailscaled
+  - PROCESS-NAME,io.tailscale.ipn.macsys.network-extension
+  - DOMAIN-SUFFIX,ts.net
+  - IP-CIDR,100.64.0.0/10,no-resolve
 
   # WeChat domestic services and article assets
   - DOMAIN-SUFFIX,weixin.com

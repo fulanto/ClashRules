@@ -44,14 +44,16 @@ payload:
   # notion
   - DOMAIN-SUFFIX,notion.com
 
+  # T-Mobile Wi-Fi Calling
+  - DST-PORT,4500
+  - SRC-PORT,4500
+  - DST-PORT,500
+  - SRC-PORT,500
+  - IP-CIDR,208.54.0.0/16,no-resolve
+  - IP-CIDR,66.94.0.0/16,no-resolve
+  - IP-CIDR,206.29.177.36/32,no-resolve
+  - DOMAIN-SUFFIX,t-mobile.com
+
   - DOMAIN-SUFFIX,lovable.dev
   - DOMAIN-SUFFIX,lovablelabs.pxf.io
   - DOMAIN-SUFFIX,lovableproject.com
-
-  # X / Twitter
-  - DOMAIN-SUFFIX,x.com
-  - DOMAIN-SUFFIX,twitter.com
-  - DOMAIN-SUFFIX,twimg.com
-  - DOMAIN-SUFFIX,twimg.co
-  - DOMAIN-SUFFIX,t.co
-  - DOMAIN-SUFFIX,twttr.com
