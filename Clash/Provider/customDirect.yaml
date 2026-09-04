@@ -162,6 +162,9 @@ payload:
   - DOMAIN-SUFFIX,supabase.co
   - DOMAIN-SUFFIX,supabase.io
 
+  # Clinmate
+  - DOMAIN-SUFFIX,clinmate.ai
+
   # CoDreamer
   - DOMAIN-SUFFIX,codreamer.com
   - DOMAIN-SUFFIX,gaccodeapi.com
