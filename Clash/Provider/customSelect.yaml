@@ -54,6 +54,11 @@ payload:
   - IP-CIDR,206.29.177.36/32,no-resolve
   - DOMAIN-SUFFIX,t-mobile.com
 
+  # 3 Hong Kong / 3HK
+  - DOMAIN-SUFFIX,three.com.hk
+  - DOMAIN-SUFFIX,hthk.com
+  - DOMAIN-SUFFIX,3supreme.vip
+
   - DOMAIN-SUFFIX,lovable.dev
   - DOMAIN-SUFFIX,lovablelabs.pxf.io
   - DOMAIN-SUFFIX,lovableproject.com
