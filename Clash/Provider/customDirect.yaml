@@ -138,8 +138,10 @@ payload:
   - DOMAIN-SUFFIX,ts.net
   - IP-CIDR,100.64.0.0/10,no-resolve
 
-  # 小红书
+  # 小红书 / REDnote
+  - DOMAIN-SUFFIX,rednote.com
   - DOMAIN-SUFFIX,xhscdn.com
+  - DOMAIN-SUFFIX,xhscdn.net
   - DOMAIN-SUFFIX,xiaohongshu.com
 
   # WeChat domestic services and article assets
