@@ -1,4 +1,7 @@
 payload:
+  # Akile
+  - DOMAIN-SUFFIX,akile.ai
+
   - DOMAIN-SUFFIX,monica.im
   - DOMAIN-SUFFIX,walmart.com
   - DOMAIN-SUFFIX,walmartimages.com
