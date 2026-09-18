@@ -22,6 +22,11 @@ payload:
   - DOMAIN-SUFFIX,firstrade.com
   - DOMAIN-SUFFIX,benzinga.com
 
+  # N26
+  - DOMAIN-SUFFIX,n26.com
+  - DOMAIN-SUFFIX,tech26.de
+  - DOMAIN-SUFFIX,number26.de
+
   # docker
   - DOMAIN-SUFFIX,docker.com
 

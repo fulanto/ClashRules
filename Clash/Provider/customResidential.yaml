@@ -38,10 +38,6 @@ payload:
   - DOMAIN-SUFFIX,braze.eu
   - DOMAIN-SUFFIX,singular.net
 
-  # N26
-  - DOMAIN-SUFFIX,tech26.de
-  - DOMAIN-SUFFIX,number26.de
-
   # Fidelity
   - DOMAIN-SUFFIX,fidelity.com
   - DOMAIN-SUFFIX,branch.io
