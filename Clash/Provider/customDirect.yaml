@@ -121,6 +121,7 @@ payload:
 
   # 公司网络直连
   - DOMAIN-SUFFIX,aiqzt.com
+  - DOMAIN,ra-eemyz3lpfxy5z9n-pb.rds.apsaradb.com
   - DOMAIN-SUFFIX,trizenai.com
   - DOMAIN-SUFFIX,trizen.ai
   - DOMAIN-SUFFIX,aiohis.com
