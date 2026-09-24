@@ -33,6 +33,11 @@ payload:
   # dify
   - DOMAIN-SUFFIX,dify.ai
 
+  # Supabase
+  - DOMAIN-SUFFIX,supabase.com
+  - DOMAIN-SUFFIX,supabase.co
+  - DOMAIN-SUFFIX,supabase.io
+
   # iproyal
   - DOMAIN-SUFFIX,iproyal.com
   - DOMAIN-SUFFIX,cloudflareinsights.com
