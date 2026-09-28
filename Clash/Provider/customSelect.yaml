@@ -22,6 +22,9 @@ payload:
   - DOMAIN-SUFFIX,firstrade.com
   - DOMAIN-SUFFIX,benzinga.com
 
+  # Equifax
+  - DOMAIN-SUFFIX,equifax.com
+
   # N26
   - DOMAIN-SUFFIX,n26.com
   - DOMAIN-SUFFIX,tech26.de
