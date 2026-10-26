@@ -147,6 +147,10 @@ payload:
   - DOMAIN-SUFFIX,xhscdn.net
   - DOMAIN-SUFFIX,xiaohongshu.com
 
+  # 国金证券 / 佣金宝
+  - DOMAIN-SUFFIX,gjzq.com.cn
+  - DOMAIN-SUFFIX,yongjinbao.com.cn
+
   # WeChat domestic services and article assets
   - DOMAIN-SUFFIX,weixin.com
   - DOMAIN-SUFFIX,weixin.qq.com
