@@ -1,5 +1,12 @@
 payload:
-  
+
+  # Hilton / Hilton Honors
+  - DOMAIN-SUFFIX,hilton.com
+  - DOMAIN-SUFFIX,hilton.com.cn
+  - DOMAIN-SUFFIX,hiltonapi.com
+  - DOMAIN-SUFFIX,hilton.io
+  - DOMAIN-SUFFIX,hiltonhonors.com
+
   # chase
   - DOMAIN-SUFFIX,chase.com
   - DOMAIN-SUFFIX,chasecdn.com
